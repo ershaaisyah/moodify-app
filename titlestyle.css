@@ -1,0 +1,349 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-left: 220px;
+    padding: 20px;
+    padding-top:20px;
+  }
+  
+header {
+    background-color: #3a78a7;
+    color: #3a78a7;
+    text-align: center;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 1100px;
+    margin:auto auto;
+    position: relative;
+}
+
+.logo a {
+    font-style: 50px;
+    font-weight: 50px;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+
+.gambarlogo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.gambarlogo img {
+    width: 60px;
+    height: auto;
+} 
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color:black;
+    float: right;
+    align-items: center;
+    font-size: 30px;
+    margin-left: px;
+}
+
+.logo-text img {
+    width: 60px;
+    height: auto;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 60px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.nav-menu li a {
+   color: black; 
+   font-weight: bold;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 10px 15px;
+   text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 30px;
+}
+
+.nav-right input[type="text"] {
+    padding:  5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.account-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+aside.library {
+    position: fixed;
+    top: 0px; 
+    left: 0;
+    width: 200px;
+    height: 100vh; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+aside.library h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+aside.library ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside.library ul li {
+    margin-bottom: 10px;
+}
+
+aside.library ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside.library ul li a:hover {
+    background-color: #eaeaea;
+    color: #3a78a7;
+}
+
+.wrapper {
+    margin-left: 220px;
+    padding: 20px;
+    padding-top:80px;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist li {
+    margin-bottom: 10px;
+}
+
+.playlist li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.playlist li a:hover {
+    background-color: #eaeaea;
+    color: #3a78a7; 
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20 px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    color: black;
+    width: 100%;
+    line-height: 50px;
+}
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a.tbl-biru{
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color:#f4f4f4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background:#737d8a;
+    text-decoration:none;
+}
+
+a.tbl-grey {
+    background: #737d8a;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color:#f4f4f4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.top-picks, .recently-played {
+    display: flex;
+    gap: 10px; 
+    overflow-x: auto; 
+    padding-bottom: 10px; 
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; 
+    max-width: 100%; 
+    white-space: nowrap;
+}
+
+.card {
+    min-width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    scroll-snap-align: start;
+    display: inline-block;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.top-picks ::-webkit-scrollbar {
+    display: small;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+    word-wrap: break-word; 
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+p{
+    margin: 10px 0 px 10px 0 px;
+    padding: 10px 0px 10px 0 px;
+}

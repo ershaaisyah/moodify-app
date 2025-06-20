@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New - moodify.</title>
+        <link rel="shortcut icon" href="Logo Moodify.png" type="image/x-icon">
+    </head>
+    <header>
+    <body>
+        <style> <!---Generalstyle---->
+            body {
+                margin: 0px;
+                background-color: #f4f4f4;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-left: 220px;
+                padding: 80px 20px 20px;
+            }
+
+            header {
+                background-color: #3a78a7;
+                color: #3a78a7;
+                text-align: center;
+                padding: 0px;
+            }
+
+            .wrapper {
+                margin-left: 220px;
+                padding: 20px;
+                padding-top:80px;
+            }
+
+            .logo a {
+                font-style: 50px;
+                font-weight: 50px;
+                float: left;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:black;
+            }
+
+            .gambarlogo {
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            .gambarlogo img {
+                width: 60px;
+                height: auto;
+            } 
+
+            .logo-text {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .logo-title {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                color:black;
+                float: right;
+                align-items: center;
+                font-size: 30px;
+                margin-left: px;
+            }
+
+            .logo-text img {
+                width: 60px;
+                height: auto;
+            }
+            header nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #f4f4f4;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                justify-content: space-between;
+                position: fixed;
+                width: 100%;
+                height: 60px;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                box-sizing: border-box;
+            }
+
+            header ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            }
+
+            header ul li a {
+                text-decoration: none;
+                color: #333;
+                padding: 10px;
+            }
+
+            .menu {
+                float: right;
+            }
+
+            nav {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                line-height: 60px;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                background-color: #f4f4f4;
+            }
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
+                padding: 10px 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+
+            .nav-menu {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                gap: 20px;
+                overflow: hidden;
+            }
+
+            .nav-menu li a {
+            color: black; 
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px 15px;
+            text-decoration: none;
+            }
+
+            .nav-right {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                height: 30px;
+            }
+
+            .nav-right input[type="text"] {
+                padding:  5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .account-img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-top: 25px;
+            }
+
+            aside.library {
+                position: fixed;
+                top: 0px; 
+                left: 0;
+                width: 200px;
+                height: 100vh; 
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-right: 1px solid #ccc;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                overflow-y: auto;
+            }
+
+            aside.library h3 {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            aside.library ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            aside.library ul li {
+                margin-bottom: 10px;
+            }
+
+            aside.library ul li a {
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            aside.library ul li a:hover {
+                background-color: #eaeaea;
+                color: #3a78a7;
+            }
+            
+        </style>
+        <nav class="navbar">
+            <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="logo-title">moodify.</span>
+            </div>
+            <ul class="nav-menu">
+            <li><a href="Moodify.html">Home</a></li>
+            <li><a href="Newmoodify.html">New</a></li>
+            <li><a href="Podcastpage.html">Podcast</a></li>
+            <li><a href="Librarypage.html">Library</a></li>
+            </ul>
+            <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <audio controls>
+                <source src="NIKI - Did You Like Her In The Morning.MP3.mp3" type="audio/mpeg">
+            </audio>
+            <div class="account">
+                <img src="ersha kadiv pdd.jpg" alt="NIKI" class="account-img">
+            </div>
+            </div>
+        </nav>
+        </header>
+        <aside class="library">
+        <div class="gambarlogo">
+            <a href="Moodify.html">
+            <img src="Logo Moodify.png" alt="Logo Moodify">
+            </a>
+            <span class="logo-title">moodify.</span>
+        </div>
+        <h3>Lib-playlist</h3>
+        <ul class="playlist">
+            <li><a href="#recentlyadded">Recently Added</a></li>
+            <li><a href="#artists">Artists</a></li>
+            <li><a href="#albums">Albums</a></li>
+            <li><a href="#songs">Songs</a></li>
+            <li><a href="#madeforyou">Made for You</a></li>
+            <li><a href="#allplaylist">All Playlist</a></li>
+            <li><a href="#favorites">Favorite Songs</a></li>
+        </ul>
+        </aside>
+        <section id="New">
+            <title>New Music Section</title>
+            <section class="new-section">
+                <div class="new-header">
+                    <h1>New</h1>
+                    <hr>
+                    <p>Currently Updated</p>
+                </div>
+                <div class="new-content">
+                    <div class="new-card">
+                        <p class="new-label">New Single</p>
+                        <p class="new-title">Sunny Days - Single</p>
+                        <p class="new-artist">Reality Club</p>
+                        <p class="type-of-music">Pop - 2024</p>
+                        <img src="Sunny Days.jpg" alt="Sunny Days - Reality Club" class="new-image">
+                        <p class="new-description">
+                            The beloved indie rockers spread feel-good energy in luminous rays of pop
+                        </p>
+                    </div>
+        
+                    <div class="new-card">
+                        <p class="new-label">TODAY'S HITS</p>
+                        <p class="new-title">Songs of Your Mood</p>
+                        <p class="new-artist">moodify. For You</p>
+                        <p class="type-of-music">Indie</p>
+                        <img src="Moodbooster.jpg" alt="Today's Hits" class="new-image">
+                        <p class="new-description">
+                            The most songs you've heard this week, updated every day.
+                        </p>
+                    </div>
+        
+                    <div class="new-card">
+                        <p class="new-label">NEW PLAYLIST</p>
+                        <p class="new-title">Viral International Pop</p>
+                        <p class="new-artist">moodify. International</p>
+                        <p class="type-of-music">Pop - 2024</p>
+                        <img src="Michael Jackson - Off the Wall Album.jpg" alt="NEW PLAYLIST" class="new-image">
+                        <p class="new-description">
+                            The genre's best tunes making the rounds online.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="latest-songs">
+                    <h2>Latest Songs</h2>
+                    <div class="songs-grid">
+                        <div class="song-item">
+                            <img src="Jennie.jpg" alt="Mantra" class="song-image">
+                            <div class="song-details">
+                                <p class="song-title">Mantra</p>
+                                <p class="song-artist">JENNIE</p>
+                            </div>
+                            <div class="song-options">
+                                <span>•••</span>
+                            </div>
+                        </div>
+                        <div class="song-item">
+                            <img src="kane brown.jpg" alt="Backseat Driver" class="song-image">
+                            <div class="song-details">
+                                <p class="song-title">Backseat Driver</p>
+                                <p class="song-artist">Kane Brown</p>
+                            </div>
+                            <div class="song-options">
+                                <span>•••</span>
+                            </div>
+                        </div>
+                        <div class="song-item">
+                            <img src="Nina.jpg" alt="Nina" class="song-image">
+                            <div class="song-details">
+                                <p class="song-title">Nina</p>
+                                <p class="song-artist">.feast</p>
+                            </div>
+                            <div class="song-options">
+                                <span>•••</span>
+                            </div>
+                        </div>
+                        <div class="song-item">
+                            <img src="Reality Club.jpg" alt="Alexandra" class="song-image">
+                            <div class="song-details">
+                                <p class="song-title">Alexandra</p>
+                                <p class="song-artist">Reality Club</p>
+                            </div>
+                            <div class="song-options">
+                                <span>•••</span>
+                            </div>
+                        </div>
+                        <div class="song-item">
+                            <img src="Halsey.jpg" alt="Visions" class="song-image">
+                            <div class="song-details">
+                                <p class="song-title">Visions</p>
+                                <p class="song-artist">Halsey</p>
+                            </div>
+                            <div class="song-options">
+                                <span>•••</span>
+                            </div>
+                        </div>
+                        <div class="song-item">
+                            <img src="Samara Cyn 2.jpg" alt="Sinner" class="song-image">
+                            <div class="song-details">
+                                <p class="song-title">Sinner</p>
+                                <p class="song-artist">Samara Cyn</p>
+                            </div>
+                            <div class="song-options">
+                                <span>•••</span>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f8f8f8;
+                        color: #333;
+                        margin-left: 220px;
+                        padding: 20px;
+                        padding: 60px;
+                    }               
+
+                    h1, h2 {
+                        margin: 0;
+                        padding: 10px;
+                    }
+
+                    .new-section {
+                        margin: 10px;
+                    }
+
+                    .new-header h1 {
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                        margin-bottom: 0px;
+                        text-transform: capitalize;
+                    }
+
+                    .new-header hr {
+                    margin-bottom: 5px;
+                    color: #999;
+                    }
+
+                    .new-content {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 20px;
+                    }
+
+                    .new-card {
+                        background-color: white;
+                        border-radius: 12px;
+                        overflow: hidden;
+                        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+                        width: calc(70% - 15px);
+                        padding: 15px;
+                    }
+
+                    .new-card:hover {
+                            transform: scale(1.05);
+                    }
+
+                    .new-label {
+                        font-size: 0.75rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #999;
+                        margin-bottom: 10px;
+                    }
+
+                    .new-title {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin: 5px 0;
+                    }
+
+                    .new-artist {
+                        font-size: 0.8rem;
+                        font-weight: normal;
+                        color: #666;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .type-of-music {
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                        color: #666;
+                        margin-bottom: 10px;
+                    }
+                    .new-image {
+                        width: 100%;
+                        border-radius: 8px;
+                    }
+
+                    .new-description {
+                        margin-top: 10px;
+                        font-size: 0.9rem;
+                        color: #666;
+                        margin-bottom: 8px;
+                    }
+
+                    .latest-songs {
+                        padding: 10px;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                    }
+
+                    .latest-songs h2 {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+
+                    .songs-grid {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 15px;
+                    }
+
+                    .song-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                        background-color: white;
+                        border-radius: 8px;
+                        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+                        height: 55px;
+                    }
+
+                    .song-item:hover {
+                            transform: scale(1.05);
+                    }
+
+                    .song-image {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 8px;
+                        margin-right: 15px;
+                    }
+
+                    .song-details {
+                        flex-grow: 1;
+                    }
+
+                    .song-title {
+                        font-size: 1rem;
+                        font-weight: bold;
+                        display: flex;
+                        align-items:end;
+                    }
+
+                    .song-artist {
+                        font-size: 0.85rem;
+                        color: #666;
+                    }
+
+                    .song-options {
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                        color: #999;
+                    }
+                    </style>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome - moodify.</title>
+        <link rel="shortcut icon" href="Logo Moodify.png" type="image/x-icon">
+    </head>
+    <header>
+    <body>
+        <style> 
+            header {
+                background-color: #3a78a7;
+                color: #3a78a7;
+                text-align: center;
+                padding: 0px;
+            }
+
+            .wrapper {
+                margin-left: 220px;
+                padding: 20px;
+                padding-top:80px;
+            }
+
+            .logo a {
+                font-style: 50px;
+                font-weight: 50px;
+                float: left;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:black;
+            }
+
+            .gambarlogo {
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            .gambarlogo img {
+                width: 60px;
+                height: auto;
+            } 
+
+            .logo-text {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .logo-title {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                color:black;
+                float: right;
+                align-items: center;
+                font-size: 30px;
+                margin-left: px;
+            }
+
+            .logo-text img {
+                width: 60px;
+                height: auto;
+            }
+            header nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #f4f4f4;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                justify-content: space-between;
+                position: fixed;
+                width: 100%;
+                height: 60px;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                box-sizing: border-box;
+            }
+
+            header ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            }
+
+            header ul li a {
+                text-decoration: none;
+                color: #333;
+                padding: 10px;
+            }
+
+            .menu {
+                float: right;
+            }
+
+            nav {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                line-height: 60px;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                background-color: #f4f4f4;
+            }
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
+                padding: 10px 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                z-index: 1000;
+            }
+
+            .nav-menu {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                gap: 20px;
+                overflow: hidden;
+            }
+
+            .nav-menu li a {
+            color: black; 
+            font-weight: bold;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 10px 15px;
+            text-decoration: none;
+            }
+
+            .nav-right {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                height: 30px;
+            }
+
+            .nav-right input[type="text"] {
+                padding:  5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .account-img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-top: 25px;
+            }
+
+            aside.library {
+                position: fixed;
+                top: 0px; 
+                left: 0;
+                width: 200px;
+                height: 100vh; 
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-right: 1px solid #ccc;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                overflow-y: auto;
+            }
+
+            aside.library h3 {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            aside.library ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            aside.library ul li {
+                margin-bottom: 10px;
+            }
+
+            aside.library ul li a {
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            aside.library ul li a:hover {
+                background-color: #eaeaea;
+                color: #3a78a7;
+            }
+
+        </style>
+        <nav class="navbar">
+            <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="logo-title">moodify.</span>
+            </div>
+            <ul class="nav-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">New</a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">Library</a></li>
+            </ul>
+            <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <audio controls>
+                <source src="" type="audio/mpeg">
+            </audio>
+            <div class="account">
+                <img src="account belum login.jpg" alt="NIKI" class="account-img">
+            </div>
+            </div>
+        </nav>
+        </header>
+        <aside class="library">
+        <div class="gambarlogo">
+            <a href="">
+            <img src="Logo Moodify.png" alt="Logo Moodify">
+            </a>
+            <span class="logo-title">moodify.</span>
+        </div>
+        <h3>Lib-playlist</h3>
+        <ul class="playlist">
+            <li><a href="#recentlyadded">Recently Added</a></li>
+            <li><a href="#artists">Artists</a></li>
+            <li><a href="#albums">Albums</a></li>
+            <li><a href="#songs">Songs</a></li>
+            <li><a href="#madeforyou">Made for You</a></li>
+            <li><a href="#allplaylist">All Playlist</a></li>
+            <li><a href="#favorites">Favorite Songs</a></li>
+        </ul>
+        </aside>
+        <section id="about">
+            <div class="content-wrapper">
+                <div class="kolom">
+                <h2>Welcome to moodify.!</h2>
+                <p>Moodify is your personalized music and podcast platform, designed to match your every mood. Whether you're looking for upbeat tunes to get you moving or calming playlists to unwind, Moodify curates the perfect selection for any moment. Explore a wide range of podcasts, create custom playlists, and discover new artists, all tailored to your unique preferences. Your mood, your music—Moodify brings it all together in one place.</p>
+                <h3>Ready to elevate your listening experience</h3>
+                <p>Sign up today and unlock full access to all features! By creating an account, you can save your favorite tracks, follow your favorite creators, and sync your playlists across all your devices. Don’t miss out on the best audio content tailored just for you—join the Moodify community now!</p>
+                <p><a href="signinup.html" class= "tbl-biru">Sign in/up</a></p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="cover sign in.png" width="400px"/>
+                </div>
+                <style>
+            
+                    .content-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                    }
+
+                    .image-wrapper {
+                        padding-top: 90px;
+                    }
+                    
+                    .kolom {
+                        margin-top: 20px;
+                        margin-bottom: 50px;
+                        margin-left: 50px;
+                        margin-left: 220px;
+                        padding: 20px;
+                        padding: 60px;
+                    }
+
+                    .kolom .deskripsi {
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        color: black;
+                    }
+
+                    h2 {
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 800;
+                        font-size: 45px;
+                        margin-bottom: 20px;
+                        margin-left: 0px;
+                        color: black;
+                        width: 100%;
+                        line-height: 50px;
+                    }
+
+                    h3 {
+                        font-size: 10px;
+                        margin-bottom: 12px;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+
+                    a.tbl-biru{
+                        background: #3f72af;
+                        border-radius: 20px;
+                        margin-top: 40px;
+                        padding: 15px 20px;
+                        color:#f4f4f4;
+                        cursor: pointer;
+                        font-weight: bold;
+                        text-decoration: none;
+                        display: inline-block;
+                    }
+
+                    a.tbl-biru:hover {
+                        background:#737d8a;
+                        text-decoration:none;
+                    }
+
+                    h3 {
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                </style>
+            </div>
+        </section>
+    </body>
+        <footer style="text-align:center; padding:20px; background-color:#282828; color:white; width:100%; position: relative; left: 0; bottom: 0;">
+            <p>&copy; 2024 moodify. Music Website All rights reserved.</p>
+            <style>
+                footer {
+                    width: 100%; 
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                    margin-left: 100px;
+                    padding: 20px;
+                    padding: 60px;
+                }
+            </style>
+        </footer>  
+</html>
+            
